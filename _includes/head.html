@@ -1,5 +1,9 @@
 <head>
   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+  
+  {% if page.use_math %}
+  {% include mathjax_support.html %}
+  {% endif %}
 
   {% include meta.html %}
   {% include fonts.html %}
